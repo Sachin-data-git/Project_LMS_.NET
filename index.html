@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #demo1:visited{
+                 color: yellow;
+       }
+       #demo2:hover{
+        color: red;
+       }
+
+       #demo3:active{
+        font-size: 30px;
+       }
+
+       p:hover{
+        color: red;
+       }
+     #inp1:focus{
+        background-color: red;
+     }
+
+     #inp2:required{
+        background-color: rebeccapurple;
+     }
+
+    #inp3:read-only{
+        color: red;
+    }
+      #inp4:checked{
+        height: 50px;
+        width: 50px;
+      }
+    
+
+      li:first-child{
+         background-color: green;
+      }
+      li:last-child{
+         background-color: green;
+      }
+
+      li:nth-child(3)
+      {
+        background-color: pink;
+      }
+
+      li:empty{
+        background-color: black;
+      }
+
+
+
+      h1::before{
+         content: "Hello ";
+         color: red;
+      }
+      h1::after{
+        content: " Sutar";
+        color: red;
+      }
+
+      p::first-letter{
+        color: rebeccapurple;
+        font-size: 30px;
+      }
+      p::first-line{
+        background-color: yellow;
+      }
+
+      span::selection{
+        color: red;
+        background-color: yellow;
+      }
+
+      img:hover{
+        /* filter: blur(5px); */
+        /* filter: brightness(50%); */
+        /* filter: grayscale(50%); */
+      }
+      #A::placeholder{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+        <a href="###" id="demo1">Visited</a>
+        <a href="##" id="demo2">hover</a>
+        <a href="####" id="demo3">Active</a>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sit aliquid accusantium porro, veniam odio blanditiis dolores suscipit ea animi magni nulla, alias provident exercitationem, inventore corporis ut atque laboriosam!</p>
+
+
+
+
+
+     <form action="">
+        <!-- <label for="A">Enter Name</label> -->
+        <input type="text" id="A" placeholder="Enter Name">
+             
+          <input type="text" id="inp1">
+
+          <input type="text" required id="inp2">
+
+          <input type="text" value="sachin" readonly id="inp3">
+
+          <input type="checkbox" id="inp4" checked itemid="inp4">
+
+          <input type="submit">
+
+     </form>
+
+     <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li></li>
+        <li>item</li>
+        <li>item</li>
+        <li></li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li></li>
+        <li>item</li>
+     </ul>
+
+     <h1>Tushar</h1>
+
+
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius unde quidem quas consequatur excepturi similique! Eveniet dolores nisi, repellat repudiandae ducimus temporibus. Inventore hic ratione facilis id autem? Dignissimos, accusamus!</p>
+
+
+     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corporis doloribus sapiente voluptates qui. Temporibus, dolorum, soluta porro ullam aut maxime exercitationem earum similique optio veniam error vitae? Repellendus, excepturi.</span>
+
+     <img src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height="400">
+</body>
+</html>

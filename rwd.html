@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      #header{
+                 background-color: yellow;
+                 padding: 30px 0px;
+      }
+      #navigation{
+        display: none;
+      }
+        #container,#header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+         .items{
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+            border: 1px solid red;
+         }
+         .items img{
+            width: 100%;
+         }
+         button{
+            padding: 10px;
+            margin-bottom: 20px;
+         }
+
+         a{
+            color: red;
+            text-decoration: none;
+            margin: 0px 20px;
+         }
+
+         @media only screen and (min-width:768px)
+         {
+            .items{
+                width: 46%;
+            }
+            #navigation{
+        display: block;
+      }  
+
+      #menu{
+        display: none;
+      }
+         }
+         @media only screen and (min-width:1200px)
+         {
+            .items{
+                width: 23%;
+            }
+         }
+
+
+         div  h2{
+                   cursor: grab;
+         }
+
+
+    </style>
+</head>
+<body>
+
+
+                    <section id="header">
+
+                        <div>
+                            <h2>logo</h2>
+                        </div>
+                        <div id="menu">
+                            icon
+                        </div>
+                        <div id="navigation">
+                            <nav>
+                                <a href="">Home</a>
+                                <a href="">Home</a>
+                                <a href="">Home</a>
+                                <a href="">Home</a>
+                                <a href="">Home</a>
+                            </nav>
+                        </div>
+                        <div>
+                            <form action="">
+                                <input type="text">
+                                <span>icon</span>
+                            </form>
+                        </div>
+                    </section>
+                   
+
+
+
+               <section id="container">
+            <div class="items">
+                <img src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image Not Found">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="items">
+                <img src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image Not Found">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="items">
+                <img src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image Not Found">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>BUY NOW</button>
+            </div>
+            <div class="items">
+                <img src="https://images.pexels.com/photos/1386604/pexels-photo-1386604.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image Not Found">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button>BUY NOW</button>
+            </div>
+          </section>
+</body>
+</html>
